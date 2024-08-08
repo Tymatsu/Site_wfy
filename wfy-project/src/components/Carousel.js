@@ -53,7 +53,7 @@ export default function Carousel({ slides }) {
                 }}
                 key={"circle" + i}
                 className={`rounded-full w-4 h-4 cursor-pointer ${
-                  i === current ? "bg-custom-point" : "bg-white"
+                  i === current ? "bg-custom-laranja3" : "bg-white"
                 }`}
               ></div>
             );

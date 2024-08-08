@@ -1,29 +1,38 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Image from "next/image";
-import girafa from "../../../public/Girafa.PNG";
+import girafa from "../../../../public/Girafa.PNG";
+import onoff from "../../../../public/OnOff.PNG";
+import abc from "../../../../public/ABC.PNG";
+import { useTranslations } from "next-intl";
 
 export default function Chapters() {
+  const t = useTranslations("chapters");
   return (
     <>
       <Header />
       <div className="relative">
         <Image
-          className="absolute z-50 w-[350px] right-0 -top-12"
+          className="absolute z-50 w-[25rem] h-[183rem] right-0 -top-5"
           src={girafa}
           alt="Picture of the author"
         />
-        <div className="relative z-0 bg-custom-bgJOJO">
+        <div className="relative z-0 bg-custom-bege1">
           <div className="relative z-0 bg-white h-24 -mt-16 rounded-bl-[96px]"></div>
         </div>
 
         <div className="relative bg-white">
           <div className="absolute z-0 top-0 right-0 w-64 h-64 bg-white"></div>
-          <div className="absolute z-0 bottom-0 right-0 w-64 h-64 bg-custom-back2"></div>
-          <div className="relative z-10 rounded-r-[96px] bg-custom-bgJOJO px-64">
+          <div className="absolute z-0 bottom-0 right-0 w-64 h-64 bg-white"></div>
+          <div className="relative z-10 rounded-r-[96px] bg-custom-bege1 px-64">
             {/* JOJO */}
-            <h2 className="font-title text-custom-titleJOJO text-6xl pb-20 pt-20">
-              Job ON Job OFF (JOJO)
+            <h2 className="flex font-title text-custom-marrom1 text-6xl pb-12 pt-20">
+              Job ON Job OFF
+              <Image
+                className="w-24 pl-5 -mt-5"
+                src={onoff}
+                alt="Picture of the author"
+              />
             </h2>
             <div className="text-xl font-manrope">
               <ul
@@ -31,106 +40,154 @@ export default function Chapters() {
                 className="marker:text-black-900 list-disc pl-5 space-y-3 pb-8"
               >
                 <li>
-                  Are you eager to finally land that competitive job offer from
-                  the company of your dreams?
+                  {t.rich("text1", {
+                    boldText: (chunks) => <strong>{chunks}</strong>,
+                  })}
                 </li>
                 <li>
-                  Have you found yourself misplaced while working at your
-                  current job?
+                  {t.rich("text2", {
+                    boldText: (chunks) => <strong>{chunks}</strong>,
+                  })}
                 </li>
                 <li>
-                  Do you often feel tired and unhappy with your professional
-                  life?
-                </li>
-                <li>
-                  Have you recently browsed LinkedIn to look for open positions?
-                </li>
-                <li>
-                  On Monday, did you start your work already longing for your
-                  Friday?
+                  {t.rich("text3", {
+                    boldText: (chunks) => <strong>{chunks}</strong>,
+                  })}
                 </li>
               </ul>
-              <div className="space-y-4 pb-4">
+              <div className="space-y-6 pb-4">
                 <p>
-                  The JOJO Chapter will assist you to ensure you will find a
-                  career that truly meets your needs and ambitions, and most
-                  importantly, guide you through the recruitment process to turn
-                  you into a very competitive candidate on interviews.
+                  {t.rich("text4", {
+                    boldText: (chunks) => <strong>{chunks}</strong>,
+                  })}
                 </p>
                 <p>
-                  We are constantly changing. It is something we cannot control.
-                  However, we usually do not pause to reflect about these life
-                  changes to adjust our career to suit them. Actually, we quite
-                  do the opposite. Have the courage to strategically assess your
-                  career. Not in 5 or 10 years. But now.
+                  {t.rich("text5", {
+                    boldText: (chunks) => <strong>{chunks}</strong>,
+                  })}
                 </p>
                 <p>
-                  Former WFY mentees have landed jobs at big companies such as:
-                  McKinsey & Company, BCG, Bain & Company, Kearney, EY
-                  Parthenon, OC&C Strategy Consultants, and many others.
+                  {t.rich("text6", {
+                    boldText: (chunks) => <strong>{chunks}</strong>,
+                  })}
                 </p>
+                {/* <p>{t("text7")}</p> */}
+                <p>
+                  <b>{t("text8")}</b>
+                </p>
+                <p>
+                  {t.rich("text9", {
+                    boldText: (chunks) => <strong>{chunks}</strong>,
+                  })}
+                </p>
+                <p>{t("text10")}</p>
+                <p>
+                  <b>{t("text11")}</b>
+                </p>
+                <p>
+                  {t.rich("text12", {
+                    boldText: (chunks) => <strong>{chunks}</strong>,
+                  })}
+                </p>
+                <p>
+                  {t.rich("text13", {
+                    boldText: (chunks) => <strong>{chunks}</strong>,
+                  })}
+                </p>
+                <li>{t("text14")}</li>
+                <li>{t("text15")}</li>
+                <li>{t("text16")}</li>
               </div>
             </div>
             <div className="pb-24">
               <button className="bg-blue-200 hover:bg-blue-700 hover:text-white text-blue-700 py-[13px] px-[28px] rounded-full">
-                Book an appointment
+                {t("text7")}
               </button>
             </div>
           </div>
         </div>
 
         <div className="relative">
-          <div className="absolute z-0 top-0 left-0 w-64 h-64 bg-custom-bgJOJO"></div>
+          <div className="absolute z-0 top-0 left-0 w-64 h-64 bg-custom-bege1"></div>
           <div className="absolute z-0 bottom-0 left-0 w-64 h-64 bg-white"></div>
-          <div className="relative z-10 px-64 bg-custom-back2 rounded-l-[96px]">
+          <div className="relative z-10 px-64 bg-white rounded-l-[96px]">
             {/* Life’s ABC */}
-            <h2 className="font-title text-custom-titleJOJO text-6xl py-20">
+            <h2 className="flex font-title text-custom-marrom1 text-6xl py-12">
               Life’s ABC
+              <Image
+                className="w-24 pl-5 -mt-6"
+                src={abc}
+                alt="Picture of the author"
+              />
             </h2>
             <div className="text-xl font-manrope">
               <ul
                 role="list"
                 className="marker:text-black-900 list-disc pl-5 space-y-3 pb-8"
               >
-                <li>Are you tired of keeping a well-known boring routine?</li>
                 <li>
-                  Are you constantly reminiscing about the Golden years of your
-                  life?
+                  {t.rich("text17", {
+                    boldText: (chunks) => <strong>{chunks}</strong>,
+                  })}
                 </li>
-                <li>Have you wondered how can you have more energy?</li>
+                <li>
+                  {t.rich("text18", {
+                    boldText: (chunks) => <strong>{chunks}</strong>,
+                  })}
+                </li>
+                <li>
+                  {t.rich("text19", {
+                    boldText: (chunks) => <strong>{chunks}</strong>,
+                  })}
+                </li>
               </ul>
-              <p>
-                The 60+ Ambitions Chapter will take you on a journey of
-                self-knowledge and discovery of passions that were hidden your
-                entire life. What Flows You can help you redesign your life the
-                way it should be: happy and fulfilling!
-              </p>
+              <div className="space-y-6 pb-6">
+                <p>
+                  {t.rich("text20", {
+                    boldText: (chunks) => <strong>{chunks}</strong>,
+                  })}
+                </p>
+                <p>
+                  {t.rich("text21", {
+                    boldText: (chunks) => <strong>{chunks}</strong>,
+                  })}
+                </p>
+                {/* <p>{t("text22")}</p> */}
 
-              <p>Some of the topics covered:</p>
+                <p>
+                  {t.rich("text22", {
+                    boldText: (chunks) => <strong>{chunks}</strong>,
+                  })}
+                </p>
+                <p>
+                  {t.rich("text23", {
+                    boldText: (chunks) => <strong>{chunks}</strong>,
+                  })}
+                </p>
+              </div>
+
               <ul
                 role="list"
-                className="marker:text-black-900 list-disc pl-5 space-y-3 pb-8"
+                className="list-image-[url(/lampada.png)] pl-5 space-y-3 pb-8"
               >
-                <li>In-depth self-knowledge</li>
-                <li>The untold advantages of being a newbie</li>
-                <li>Day One vs One Day</li>
+                <li>{t("text24")}</li>
+                <li>{t("text25")}</li>
+                <li>{t("text26")}</li>
               </ul>
             </div>
 
             <div className="pb-20">
               <button className="bg-blue-200 hover:bg-blue-700 hover:text-white text-blue-700 py-[13px] px-[28px] rounded-full">
-                Book an appointment
+                {t("text7")}
               </button>
             </div>
           </div>
         </div>
 
-        <div className=" bg-custom-back2">
-          {/* <div className="absolute z-0 top-0 right-0 w-64 h-64 bg-custom-back2"></div> */}
+        {/* <div className=" bg-custom-bege2">
           <div className="px-64 bg-white rounded-r-[96px]">
-            {/* BRAxit */}
 
-            <h2 className="font-title text-custom-titleJOJO text-6xl py-20">
+            <h2 className="font-title text-custom-marrom1 text-6xl py-20">
               BRAxit
             </h2>
             <div className="text-xl font-manrope">
@@ -181,9 +238,9 @@ export default function Chapters() {
               </button>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className="bg-white relative z-100">
-          <div className="bg-custom-back2 h-24 rounded-tl-[96px] relative z-100"></div>
+          <div className="bg-custom-bege2 h-24 rounded-tl-[96px] relative z-100"></div>
         </div>
       </div>
 

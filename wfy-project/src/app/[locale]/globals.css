@@ -4,19 +4,21 @@
 @layer base {
   @font-face {
     font-family: "Automobile Contest";
-    src: url("../fonts/AutomobileContest.ttf");
+    src: url("../../fonts/AutomobileContest.ttf");
   }
 }
 
 @font-face {
   font-family: "Oswald";
-  src: url("../fonts/Oswald.ttf");
+  src: url("../../fonts/Oswald.ttf");
 }
 
 @font-face {
   font-family: "Manrope";
-  src: url("../fonts/Manrope.ttf");
+  src: url("../../fonts/Manrope.ttf");
 }
+
+
 
 
 

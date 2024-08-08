@@ -379,7 +379,7 @@ export default function Home() {
           <p className="text-3xl pb-10 font-oswald uppercase text-custom-cinza2 max-lg: px-3">
             {t("text51")}
           </p>
-          <button class="bg-custom-azul2 hover:bg-blue-700 hover:text-white text-custom-azul1 py-[13px] px-[28px] rounded-full">
+          <button className="bg-custom-azul2 hover:bg-blue-700 hover:text-white text-custom-azul1 py-[13px] px-[28px] rounded-full">
             {t("text52")}
           </button>
         </div>

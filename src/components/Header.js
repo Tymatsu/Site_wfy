@@ -9,6 +9,7 @@ const Header = () => {
   const t = useTranslations("header");
 
   return (
+    
     <header className="bg-white flex flex-col lg:flex-row justify-between items-center h-auto w-full p-6 px-40">
       <Link href="/">
         <div className="flex justify-center items-center">

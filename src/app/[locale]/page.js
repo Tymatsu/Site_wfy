@@ -1,7 +1,7 @@
 import Carousel from "@/components/Carousel";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import Link from "next/link";
+import { Link } from "../../../navigation";
 import RotatingImage from "@/components/RotatingImage";
 import Testimonials from "@/components/Testimonials";
 import Image from "next/image";
@@ -42,13 +42,14 @@ export default function Home() {
                 <p className="text-8xl max-lg:text-5xl">{t("text1")}</p>
                 <p className="text-8xl max-lg:text-5xl">{t("text2")}</p>
               </div>
-              <div className="flex mb-12 justify-center lg:justify-start max-lg:flex-col max-lg:text-center">
+              <div className="flex justify-center lg:justify-start max-lg:flex-col max-lg:text-center">
                 <p className="text-8xl max-lg:text-5xl ">{t("text3")}</p>
                 <div className="max-lg:flex max-lg:justify-center">
-
-                <RotatingImage />
+                  <RotatingImage />
                 </div>
               </div>
+                <p className="text-8xl max-lg:text-5xl">{t("text46")}</p>
+                <p className="text-8xl max-lg:text-5xl">{t("text45")}</p>
             </div>
             <div className="max-lg:flex max-lg:justify-center">
               <Image
@@ -80,8 +81,14 @@ export default function Home() {
           <p className="text-4xl flex items-end justify-center max-lg:flex-col max-lg:items-center max-lg:text-2xl">
             {t("text6")}
             <div className="-mb-24 max-lg:text-center">
-              <b className="text-8xl pl-4 max-lg:pl-0 max-lg:text-3xl ">P-L-A-N.</b>
-              <Image className="w-[25rem] max-lg:w-56" src={detailPlan} alt="detail plan" />
+              <b className="text-8xl pl-4 max-lg:pl-0 max-lg:text-3xl ">
+                P-L-A-N.
+              </b>
+              <Image
+                className="w-[25rem] max-lg:w-56"
+                src={detailPlan}
+                alt="detail plan"
+              />
             </div>
           </p>
           <div className="flex justify-center">
@@ -90,7 +97,9 @@ export default function Home() {
             </p>
           </div>
           <div className="flex justify-center">
-            <p className="text-xl pt-6">{t("text38")}</p>
+            <p className="text-xl pt-6 max-lg:text-lg max-lg:px-2">
+              {t("text38")}
+            </p>
           </div>
           <p className="flex justify-center font-oswald text-2xl font-light pt-16 pl-[700px] text-custom-cinza2 max-lg:p-0 max-lg:text-base">
             - WHAT FLOWS YOU
@@ -106,11 +115,13 @@ export default function Home() {
                 alt="Picture of the author"
               />
               <div className="absolute inset-0 flex flex-col items-center justify-center p-4 ml-12">
-                <p className="text-center text-4xl text-white mb-5 font-semibold max-lg:text-2xl">
+                <p className="text-center text-4xl text-white mb-5 font-semibold max-lg:text-2xl max-lg:mb-2">
                   <span className="text-7xl max-lg:text-3xl">1. </span> PERSONAL
-                  <p className="text-xl font-light ">{t("text39")}</p>
+                  <p className="text-xl font-light max-lg:text-sm">
+                    {t("text39")}
+                  </p>
                 </p>
-                <p className="text-center text-3xl text-white w-full font-manrope font-light px-4 max-lg:text-base">
+                <p className="text-center text-3xl text-white w-full font-manrope font-light px-4 max-lg:text-base max-lg:px-0">
                   {t("text8")}
                   <br />
                   {t("text9")}
@@ -135,11 +146,13 @@ export default function Home() {
                 alt="Picture of the author"
               />
               <div className="absolute inset-0 flex flex-col items-center justify-center p-4 mr-12">
-                <p className="text-center text-4xl text-white mb-5 font-semibold max-lg:text-2xl">
+                <p className="text-center text-4xl text-white mb-5 font-semibold max-lg:text-2xl max-lg:mb-2">
                   <span className="text-7xl max-lg:text-3xl">2. </span> LOVING
-                  <p className="text-xl font-light">{t("text40")}</p>
+                  <p className="text-xl font-light max-lg:text-sm">
+                    {t("text40")}
+                  </p>
                 </p>
-                <p className="text-center text-3xl text-white w-full px-4 font-manrope font-light max-lg:text-base">
+                <p className="text-center text-3xl text-white w-full px-4 font-manrope font-light max-lg:text-base max-lg:px-0">
                   {t("text13")}
                   <br />
                   {t("text14")}
@@ -168,11 +181,14 @@ export default function Home() {
                 alt="Picture of the author"
               />
               <div className="absolute inset-0 flex flex-col items-center justify-center p-4">
-                <p className="text-center text-4xl text-white mb-5 font-semibold max-lg:text-2xl">
-                  <span className="text-7xl max-lg:text-3xl">3. </span> ACTIONABLE
-                  <p className="text-xl font-light">{t("text43")}</p>
+                <p className="text-center text-4xl text-white mb-5 font-semibold max-lg:text-2xl max-lg:mb-2">
+                  <span className="text-7xl max-lg:text-3xl">3. </span>{" "}
+                  ACTIONABLE
+                  <p className="text-xl font-light max-lg:text-sm">
+                    {t("text43")}
+                  </p>
                 </p>
-                <p className="text-center text-3xl text-white w-full font-manrope font-light px-4 max-lg:text-base">
+                <p className="text-center text-3xl text-white w-full font-manrope font-light px-4 max-lg:text-base max-lg:px-0">
                   {t("text20")}
                   <br />
                   {t("text21")}
@@ -197,11 +213,14 @@ export default function Home() {
                 alt="Picture of the author"
               />
               <div className="absolute inset-0 flex flex-col items-center justify-center p-4">
-                <p className="text-center text-4xl text-white mb-5 font-semibold max-lg:text-2xl">
-                  <span className="text-7xl max-lg:text-3xl">4. </span> NOURISHING
-                  <p className="text-xl font-light">{t("text44")}</p>
+                <p className="text-center text-4xl text-white mb-5 font-semibold max-lg:text-2xl max-lg:mb-2">
+                  <span className="text-7xl max-lg:text-3xl">4. </span>{" "}
+                  NOURISHING
+                  <p className="text-xl font-light max-lg:text-sm">
+                    {t("text44")}
+                  </p>
                 </p>
-                <p className="text-center text-3xl text-white w-full font-manrope font-light px-4 max-lg:text-base">
+                <p className="text-center text-3xl text-white w-full font-manrope font-light px-4 max-lg:text-base max-lg:px-0">
                   {t("text25")}
                   <br />
                   {t("text26")}
@@ -218,27 +237,27 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="rounded-[96px] max-lg:rounded-3xl bg-custom-laranja1 p-16 relative z-10 text-custom-cinza1 max-lg:px-1">
-        <p className="text-4xl text-center font-title font-semibold pb-6">
+      <div className="rounded-[96px] max-lg:rounded-3xl bg-custom-laranja1 p-16 relative z-10 text-custom-cinza1 max-lg:px-0 ">
+        <p className="text-4xl text-center font-title font-semibold pb-6 ">
           {t("text30")}
         </p>
-        <p className="text-2xl text-center font-manrope pb-2 text-custom-cinza2">
+        <p className="text-2xl text-center font-manrope pb-2 text-custom-cinza2 max-lg:text-lg max-lg:p-2">
           {t.rich("text31", {
             boldText: (chunks) => <strong>{chunks}</strong>,
           })}
         </p>
-        <p className="text-2xl text-center font-manrope pb-6 text-custom-cinza2">
+        <p className="text-2xl text-center font-manrope pb-6 text-custom-cinza2 max-lg:text-lg max-lg:p-2">
           {t("text32")}
         </p>
         <div className="flex flex-col items-center space-y-6 p-4 font-manrope">
-          <div className="bg-white text-center flex flex-col items-center w-2/3 p-12 rounded-3xl overflow-hidden max-lg:w-full">
+          <div className="bg-white text-center flex flex-col items-center w-2/3 p-12 rounded-3xl overflow-hidden max-lg:w-full max-lg:p-3">
             <Image
               className="size-64"
               src={card1}
               alt="Picture of the author"
             />
             <p className="text-4xl font-title pb-10">Job ON Job OFF</p>
-            <div className="text-left space-y-6 pb-6 max-w-full">
+            <div className="text-left space-y-6 pb-6 max-w-full ">
               <p>
                 {t.rich("text33", {
                   boldText: (chunks) => <strong>{chunks}</strong>,
@@ -338,7 +357,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="bg-white text-center flex flex-col items-center w-2/3 p-12 rounded-3xl max-lg:w-full">
+          <div className="bg-white text-center flex flex-col items-center w-2/3 p-12 rounded-3xl max-lg:w-full max-lg:p-3">
             <Image
               className="size-64"
               src={card2}
@@ -379,9 +398,11 @@ export default function Home() {
           <p className="text-3xl pb-10 font-oswald uppercase text-custom-cinza2 max-lg: px-3">
             {t("text51")}
           </p>
-          <button className="bg-custom-azul2 hover:bg-blue-700 hover:text-white text-custom-azul1 py-[13px] px-[28px] rounded-full">
-            {t("text52")}
-          </button>
+          <Link href="https://wa.me/message/KWA4CXA3H5DTJ1">
+            <button className="bg-custom-azul2 hover:bg-blue-700 hover:text-white text-custom-azul1 py-[13px] px-[28px] rounded-full">
+              {t("text52")}
+            </button>
+          </Link>
         </div>
       </div>
 

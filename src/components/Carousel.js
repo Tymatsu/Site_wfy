@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import {
   BsFillArrowLeftCircleFill,
   BsFillArrowRightCircleFill,
@@ -7,6 +7,24 @@ import {
 
 export default function Carousel({ slides }) {
   let [current, setCurrent] = useState(0);
+  const touchStartX = useRef(null);
+  const touchEndX = useRef(null);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 1024px)");
+    setIsMobile(mediaQuery.matches);
+
+    const handleResize = () => {
+      setIsMobile(mediaQuery.matches);
+    };
+
+    mediaQuery.addEventListener("change", handleResize);
+
+    return () => {
+      mediaQuery.removeEventListener("change", handleResize);
+    };
+  }, []);
 
   let previousSlide = () => {
     setCurrent(current === 0 ? slides.length - 1 : current - 1);
@@ -16,11 +34,39 @@ export default function Carousel({ slides }) {
     setCurrent(current === slides.length - 1 ? 0 : current + 1);
   };
 
+  const handleTouchStart = (e) => {
+    if (isMobile) {
+      touchStartX.current = e.changedTouches[0].clientX;
+    }
+  };
+
+  const handleTouchEnd = (e) => {
+    if (isMobile) {
+      touchEndX.current = e.changedTouches[0].clientX;
+      handleSwipe();
+    }
+  };
+
+  const handleSwipe = () => {
+    const swipeDistance = touchStartX.current - touchEndX.current;
+    const minSwipeDistance = 50; // Define a distância mínima para reconhecer o swipe
+
+    if (swipeDistance > minSwipeDistance) {
+      nextSlide();
+    } else if (swipeDistance < -minSwipeDistance) {
+      previousSlide();
+    }
+  };
+
   return (
     <>
-      <div className="relative overflow-hidden pb-20">
+      <div
+        className="relative overflow-hidden pb-20"
+        onTouchStart={handleTouchStart}
+        onTouchEnd={handleTouchEnd}
+      >
         <div
-          className="flex transition-transform duration-500 ease-in-out" // Ajusta a transição para ser mais suave e visível
+          className="flex transition-transform duration-500 ease-in-out"
           style={{ transform: `translateX(-${current * 100}%)` }}
         >
           {slides.map((s, index) => {
@@ -35,7 +81,7 @@ export default function Carousel({ slides }) {
           })}
         </div>
 
-        <div className="absolute top-0 h-full w-full flex justify-between items-center text-white px-10 text-3xl">
+        <div className="absolute top-0 h-full w-full flex justify-between items-center text-white px-10 text-3xl max-lg:hidden max-lg:text-lg">
           <button onClick={previousSlide} aria-label="Previous Slide">
             <BsFillArrowLeftCircleFill />
           </button>

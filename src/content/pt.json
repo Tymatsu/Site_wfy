@@ -13,9 +13,11 @@
     "text5": "Fale com a gente!"
   },
   "home": {
-    "text1": "Se",
-    "text2": "permita",
+    "text1": "Se permita",
+    "text2": "",
     "text3": "ter",
+    "text46": "ao atingir o",
+    "text45": "Flow",
     "text4": "SESSÕES DE MENTORIA PARA ATINGIR SEU POTENCIAL MÁXIMO",
     "text5": "Saiba mais",
     "text6": "\" Don't call it a dream. Call it a",
@@ -65,8 +67,7 @@
     "text43": "(PRÁTICO)",
     "text44": "(CUIDADOSO)",
 
-    "text45": "Apis3",
-    "text46": "Teste1",
+    
 
     "text47": "O Life's ABC vai te levar em uma jornada de autoconhecimento e descoberta de paixões que estiveram escondidas durante toda a sua vida. Ele vai te ensinar como <boldText>levar sua vida de forma plena</boldText>. ABC quer dizer Ambições, Crenças e Conquistas, em inglês, <boldText>Ambitions, Beliefs, e Conquests</boldText>. De preferência nesta ordem.",
     "text48": "No início da sua jornada, você entenderá verdadeiramente para onde quer ir, em outras palavras, quais são as suas <boldText>Ambições</boldText>. Elas criarão tração para que você possa ter <boldText>força e perseverança para mudar sua vida</boldText>.",
@@ -134,7 +135,8 @@
     "text14": "Por fim, quando pensamos em como estamos vivendo nossas vidas, acredito que devemos agir como um Diretor de cinema. Não de apenas uma história, mas de inúmeras. Uma pessoa que escreve suas histórias, entende claramente o seu relacionamento com os outros na trama e, mais importante, nunca desempenha um papel escrito por outro alguém.",
     "text15": "Somos responsáveis por nossas vidas todos os dias, o tempo todo. Sem parar. Nossa saúde, que é o que realmente garante que ainda estamos respirando aqui nesta imensa rocha azul no Universo, deve ser a coisa mais importante para nós. Ao longo dos anos, desenvolvi metodologias para garantir que meus mentorados assumao o assento de diretor das suas vidas. Posso garantir que alcançar o que chamamos de estado de Flow deve ser seu objetivo. Deixa eu te ajudar.",
     "text16": "Aproveite cada minuto da história que você está escrevendo para si mesmo(a). Sem mais delongas:",
-    "text17": "“3,2,1...Ação!”"
+    "text17": "“3,2,1...Ação!”",
+    "text18": "“3,2,1...Ação!”"
   },
   "contact": {
     "text0": "Olá! Que bom ver você aqui ;)",

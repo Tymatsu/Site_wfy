@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { Link } from "../../navigation";
 import image from "../../public/Logo.PNG";
-import copyright from "../../public/copyright.png";
 import instagramLogo from "../../public/instagram_logo.png";
 import whatsappLogo from "../../public/whatsapp_logo.png";
 import { useTranslations } from "next-intl";
@@ -12,7 +11,7 @@ const Footer = () => {
     <div className="bg-custom-bege2 flex flex-col items-center lg:items-start lg:flex-row justify-around h-auto pb-4 font-title">
       <div className="text-center lg:text-left">
         <Image className="w-36 h-36 mx-auto lg:mx-0" src={image} alt="Picture of the author" />
-        <div className="flex justify-center lg:justify-start gap-4 mt-4">
+        <div className="flex justify-center lg:justify-center gap-4 mt-4">
           <Link
             href="https://www.instagram.com/whatflows.u?igsh=MXdjNGJ1c2J4Y2RzbQ=="
             passHref

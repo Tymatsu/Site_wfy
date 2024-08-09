@@ -25,7 +25,6 @@ export default function Chapters() {
           <div className="absolute z-0 top-0 right-0 w-64 h-64 bg-white"></div>
           <div className="absolute z-0 bottom-0 right-0 w-64 h-64 bg-white"></div>
           <div className="relative z-10 rounded-r-[96px] bg-custom-bege1 px-64">
-            {/* JOJO */}
             <h2 className="flex font-title text-custom-marrom1 text-6xl pb-12 pt-20">
               Job ON Job OFF
               <Image
@@ -94,9 +93,14 @@ export default function Chapters() {
                     boldText: (chunks) => <strong>{chunks}</strong>,
                   })}
                 </p>
-                <li>{t("text14")}</li>
-                <li>{t("text15")}</li>
-                <li>{t("text16")}</li>
+                <ul
+                  role="list"
+                  className="list-image-[url(/lampada.png)] pl-5 space-y-3 pb-8"
+                >
+                  <li>{t("text14")}</li>
+                  <li>{t("text15")}</li>
+                  <li>{t("text16")}</li>
+                </ul>
               </div>
             </div>
             <div className="pb-24">

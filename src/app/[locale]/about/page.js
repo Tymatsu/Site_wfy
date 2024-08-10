@@ -59,7 +59,7 @@ export default function About() {
         </div>
 
         <div className="bg-custom-bege1 py-16">
-          <p className="font-title font-bold text-3xl pl-24 pb-10">
+          <p className="font-title font-bold text-2xl pl-24 pb-10">
             Stephanie’s life purpose:
           </p>
           <div className="flex justify-center items-center">
@@ -68,7 +68,7 @@ export default function About() {
               src={quotationLeft}
               alt="Picture of the author"
             />
-            <p className="font-automobile text-8xl mx-4">
+            <p className="font-automobile text-7xl mx-4">
               To touch people’s lives helping them experience their best selves.
             </p>
             <Image
@@ -80,21 +80,21 @@ export default function About() {
         </div>
 
         <div className="relative h-[120rem]">
-          <div className="relative z-10 bg-custom-amarelo1 rounded-b-[96px] p-40 h-1/2">
+          <div className="relative z-10 bg-custom-amarelo1 rounded-b-[96px] py-40 h-1/2 px-20">
             <div className="flex justify-center pb-40">
               <iframe
                 src={"https://www.youtube.com/embed/iWOyfLBYtuU"}
-                width={500}
-                height={300}
+                width={700}
+                height={400}
                 frameborder="10"
                 sandbox
               />
             </div>
-            <div className="bg-white px-20 -mb-48 shadow-2xl rounded-lg font-manrope">
+            <div className="bg-white px-12 -mb-48 shadow-2xl rounded-lg font-manrope">
               <div className="relative flex pb-12">
-                <div className="absolute -top-44 -left-32">
+                <div className="absolute bottom-10 right-36 w-full">
                   <Image
-                    className="w-[36rem]"
+                    className="w-[32rem] "
                     src={pictureAbout}
                     alt="Picture of the author"
                   />

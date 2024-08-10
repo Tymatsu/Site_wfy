@@ -10,18 +10,23 @@ const Header = () => {
 
   return (
     
-    <header className="bg-white flex flex-col lg:flex-row justify-between items-center h-auto w-full p-6 px-40">
+    <header className="bg-white flex flex-col lg:flex-row justify-between items-center h-auto w-full p-6 px-20 ">
       <Link href="/">
         <div className="flex justify-center items-center">
           <Image
-            className="w-44 relative z-10"
+            className="w-36 max-lg:mx-36 relative z-10"
             src={image}
             alt="Picture of the author"
           />
+          
         </div>
       </Link>
+      <div className="lg:hidden mt-6 -mx-44">
+      <LangSwitcher />
+
+      </div>
       <nav className="hidden lg:flex">
-        <ul className="flex gap-10 py-10">
+        <ul className="flex gap-8 py-10">
           <li>
             <Link href={`/`} className="hover:underline underline-offset-8">
               Home

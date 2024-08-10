@@ -9,7 +9,7 @@ export async function POST(request) {
     const { firstName, lastName, email, phoneNumber, description,joinNewsletter } = formData;
 
     const { data, error } = await resend.emails.send({
-      from: `${firstName} <${email}>`,
+      from: `Contact<sm@whatflowsyou.com>`,
       to: 'sm@whatflowsyou.com',
       subject: `New Contact: ${firstName} ${lastName}`,
       html: `

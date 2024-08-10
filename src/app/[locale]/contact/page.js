@@ -50,11 +50,11 @@ export default function Contact() {
     <>
       <Header />
       <div className="flex">
-        <div className="w-1/2 bg-custom-bege1 rounded-tr-[96px] font-title font-semibold text-xl text-custom-laranja2 p-10 pl-36">
+        <div className="w-1/2 bg-custom-bege1 rounded-tr-[96px] font-title font-semibold text-xl text-custom-laranja2 p-10 pl-20">
           <h2 className="text-3xl text-custom-amarelo1 p-6">{t("text0")}</h2>
           <p className="p-6">{t("text2")}</p>
           <Image
-            className="w-[32rem] ml-40 "
+            className="w-[32rem] left-40 "
             src={girafa}
             alt="Picture of the author"
           />

@@ -41,7 +41,7 @@ const RotatingImage = () => {
     return (
       <div className={`transition-opacity duration-500 ${fade ? "opacity-100" : "opacity-0"} h-[38px]`}>
         <Image
-          className="pl-6 w-[338px] object-cover"
+          className="pl-6 w-72 object-cover max-lg:pl-0"
           src={images[currentImageIndex]}
           alt="Picture of the author"
         />

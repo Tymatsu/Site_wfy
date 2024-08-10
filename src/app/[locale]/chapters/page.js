@@ -1,5 +1,6 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import { Link } from "../../../../navigation";
 import Image from "next/image";
 import girafa from "../../../../public/Girafa.PNG";
 import onoff from "../../../../public/OnOff.PNG";
@@ -13,7 +14,7 @@ export default function Chapters() {
       <Header />
       <div className="relative">
         <Image
-          className="absolute z-50 w-[25rem] h-[183rem] right-0 -top-5"
+          className="absolute z-50 w-[240px] h-[2880px] right-0 top-12 bottom-40"
           src={girafa}
           alt="Picture of the author"
         />
@@ -24,8 +25,8 @@ export default function Chapters() {
         <div className="relative bg-white">
           <div className="absolute z-0 top-0 right-0 w-64 h-64 bg-white"></div>
           <div className="absolute z-0 bottom-0 right-0 w-64 h-64 bg-white"></div>
-          <div className="relative z-10 rounded-r-[96px] bg-custom-bege1 px-64">
-            <h2 className="flex font-title text-custom-marrom1 text-6xl pb-12 pt-20">
+          <div className="relative z-10 rounded-r-[96px] bg-custom-bege1 px-36">
+            <h2 className="flex font-title text-custom-marrom1 text-6xl pb-6 pt-20">
               Job ON Job OFF
               <Image
                 className="w-24 pl-5 -mt-5"
@@ -104,9 +105,11 @@ export default function Chapters() {
               </div>
             </div>
             <div className="pb-24">
-              <button className="bg-blue-200 hover:bg-blue-700 hover:text-white text-blue-700 py-[13px] px-[28px] rounded-full">
-                {t("text7")}
-              </button>
+              <Link href="https://wa.me/message/KWA4CXA3H5DTJ1" passHref>
+                <button className="bg-blue-200 hover:bg-blue-700 hover:text-white text-blue-700 py-[13px] px-[28px] rounded-full">
+                  {t("text7")}
+                </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -114,9 +117,8 @@ export default function Chapters() {
         <div className="relative">
           <div className="absolute z-0 top-0 left-0 w-64 h-64 bg-custom-bege1"></div>
           <div className="absolute z-0 bottom-0 left-0 w-64 h-64 bg-white"></div>
-          <div className="relative z-10 px-64 bg-white rounded-l-[96px]">
-            {/* Life’s ABC */}
-            <h2 className="flex font-title text-custom-marrom1 text-6xl py-12">
+          <div className="relative z-10 px-36 bg-white rounded-l-[96px]">
+            <h2 className="flex font-title text-custom-marrom1 text-6xl pt-12 pb-6">
               Life’s ABC
               <Image
                 className="w-24 pl-5 -mt-6"
@@ -181,9 +183,11 @@ export default function Chapters() {
             </div>
 
             <div className="pb-20">
-              <button className="bg-blue-200 hover:bg-blue-700 hover:text-white text-blue-700 py-[13px] px-[28px] rounded-full">
-                {t("text7")}
-              </button>
+              <Link href="https://wa.me/message/KWA4CXA3H5DTJ1" passHref>
+                <button className="bg-blue-200 hover:bg-blue-700 hover:text-white text-blue-700 py-[13px] px-[28px] rounded-full">
+                  {t("text7")}
+                </button>
+              </Link>
             </div>
           </div>
         </div>

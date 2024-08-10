@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        'max-lg': {'max': '1024px'},
+        'max-lg': {'max': '1023px'},
       },
       backgroundImage: {
         'not-found': "url('/bg-404.png')",

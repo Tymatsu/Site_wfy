@@ -71,7 +71,11 @@ export default function Chapters() {
                     boldText: (chunks) => <strong>{chunks}</strong>,
                   })}
                 </p>
-                {/* <p>{t("text7")}</p> */}
+                <p>
+                  {t.rich("text27", {
+                    boldText: (chunks) => <strong>{chunks}</strong>,
+                  })}
+                </p>
                 <p>
                   <b>{t("text8")}</b>
                 </p>
@@ -88,6 +92,9 @@ export default function Chapters() {
                   {t.rich("text12", {
                     boldText: (chunks) => <strong>{chunks}</strong>,
                   })}
+                </p>
+                <p>
+                  {t("text28")}
                 </p>
                 <p>
                   {t.rich("text13", {

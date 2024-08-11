@@ -1,11 +1,11 @@
 {
-  "header":{
+  "header": {
     "text1": "Chapters",
     "text2": "About",
     "text3": "Contact",
     "text4": "Book a session"
   },
-  "footer":{
+  "footer": {
     "text1": "Chapters",
     "text2": "About",
     "text3": "Contact",
@@ -21,7 +21,7 @@
     "text6": "\" Don't call it a dream. Call it a",
     "text7": "Make it a reality\"",
     "text38": "",
-    
+
     "text8": "To ensure you will achieve your",
     "text9": "dreams, they first need to truly",
     "text10": "represent who you are, your",
@@ -47,7 +47,7 @@
     "text27": "short, so you should ensure your",
     "text28": "dreams nourish your life.",
     "text29": "Everyday.",
-    
+
     "text30": "Chapters",
     "text31": "Help yourself with the chapter that fits the best with <boldText>your current life stage</boldText>.",
     "text32": "Good news: you can start your WFY journey with more than one!",
@@ -61,7 +61,6 @@
     "text41": "Other Careers",
     "text42": "And more...",
 
-    
     "text39": "",
     "text40": "",
     "text43": "",
@@ -69,7 +68,6 @@
 
     "text45": "",
     "text46": "",
-    
 
     "text47": "Life's ABC will take you on a journey of self-knowledge and discovery of passions that were hidden your entire life. It will teach you how to <boldText>lead your life fully</boldText>. ABC stands for <boldText>Ambitions, Beliefs and Conquests</boldText>. It is smart to respect this order.",
     "text48": "At the start of your journey, you will truly understand where you want to go, which is essentially led by your <boldText>Ambitions</boldText>. They are what will create traction so you can have <boldText>drive to change your life</boldText>.",
@@ -97,14 +95,15 @@
     "text4": "The Job ON Job OFF (JOJO) Chapter will assist you to ensure you will find a career that truly meets your needs and ambitions, and most importantly, guides you through the recruitment process to turn you into a very competitive candidate. No matter if you are <boldText>building your CV</boldText> or <boldText>facing a Case or a Fit (traditional) interview</boldText>. You will nail it.",
     "text5": "Also, you will have the opportunity to <boldText>strategically assess your career journey</boldText>. We know that we are constantly changing. It is something we cannot control. But do we really recognize our never-ending changes? I don't think so. We usually don't take a moment to reflect about our life changes to adjust our career to suit them.",
     "text6": "Actually, we do quite the opposite. Have the courage to own and conquer the next big steps of your career. Not in 5 or 10 years. But <boldText>now</boldText>. We have helped mentees from <boldText>various career paths:</boldText>",
+    "text27": "",
 
-    
     "text8": "A. Management Consulting",
     "text9": "Learn how to get offers in one of the <boldText>most competitive recruiting processes in the world</boldText>. Mentoring sessions will be crafted based on many years of experience both in <boldText>career mentoring</boldText> and in the <boldText>top management consulting firms</boldText> (called MBB, McKinsey & Company, BCG and Bain & Company). In such a competitive recruiting process, <boldText>every stage matters</boldText>. Learn how to shine at every step of the way - from building a CV that really stands out to acing case interviews.",
     "text10": "Our mentees have landed jobs at top management consulting firms such as: McKinsey & Company, BCG, Bain & Company, Kearney, EY Parthenon, Advisia, and many others.",
-    
+
     "text11": "B. Other career paths",
     "text12": "The mentoring will help you gain <boldText>self-knowledge</boldText> in regards to your academic, professional and personal life. Then, you will be prepared not only to write <boldText>excellent CV and cover letters</boldText>, but also to approach interview questions (behavioral and traditional ones) with ease. The mentoring will be <boldText>customized to your needs</boldText> - don't worry about that architecture portfolio that you don't know which projects to select for nor what to write in each page. We have got your back. If you want a mentoring that will elevate your candidacy to finally <boldText>land that dream job</boldText>, now you have found it.",
+    "text28": "",
     "text13": "<boldText>Some of the topics</boldText> covered in the Job ON Job OFF :",
     "text14": "Essentials of Case and Traditional (Fit) Interviews",
     "text15": "Career Matrix",
@@ -130,6 +129,8 @@
     "text3": "received M7 MBA offer",
     "text4": "of mentoring experience",
     "text5": "...and counting!",
+    "text19": "Stephanie’s life purpose:",
+    "text20": "To touch people’s lives helping them experience their best selves.",
 
     "text6": "“3, 2, 1... Action!”",
     "text7": "The phrase above is heard hundreds of times in film studios. But, I will try to show you <boldText>why all of us</boldText> should also have it in the back of our minds. I will start by asking you:",

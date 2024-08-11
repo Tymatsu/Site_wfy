@@ -60,7 +60,7 @@ export default function About() {
 
         <div className="bg-custom-bege1 py-16">
           <p className="font-title font-bold text-2xl pl-24 pb-10">
-            Stephanie’s life purpose:
+            {t("text19")}
           </p>
           <div className="flex justify-center items-center">
             <Image
@@ -68,9 +68,7 @@ export default function About() {
               src={quotationLeft}
               alt="Picture of the author"
             />
-            <p className="font-automobile text-7xl mx-4">
-              To touch people’s lives helping them experience their best selves.
-            </p>
+            <p className="font-automobile text-7xl mx-4">{t("text20")}</p>
             <Image
               className="w-32 relative -mt-20"
               src={quotationRight}
@@ -103,40 +101,60 @@ export default function About() {
                   <h2 className="font-automobile text-9xl text-custom-azul1">
                     {t("text6")}
                   </h2>
-                  <p>{t.rich("text7", {
-            boldText: (chunks) => <strong>{chunks}</strong>,
-          })}</p>
-                  <p>{t.rich("text8", {
-            boldText: (chunks) => <strong>{chunks}</strong>,
-          })}</p>
-                  <p>{t.rich("text9", {
-            boldText: (chunks) => <strong>{chunks}</strong>,
-          })}</p>
+                  <p>
+                    {t.rich("text7", {
+                      boldText: (chunks) => <strong>{chunks}</strong>,
+                    })}
+                  </p>
+                  <p>
+                    {t.rich("text8", {
+                      boldText: (chunks) => <strong>{chunks}</strong>,
+                    })}
+                  </p>
+                  <p>
+                    {t.rich("text9", {
+                      boldText: (chunks) => <strong>{chunks}</strong>,
+                    })}
+                  </p>
                 </div>
               </div>
 
               <div className="relative space-y-4 ">
-                <p>{t.rich("text10", {
-            boldText: (chunks) => <strong>{chunks}</strong>,
-          })}</p>
-                <p>{t.rich("text11", {
-            boldText: (chunks) => <strong>{chunks}</strong>,
-          })}</p>
-                <p>{t.rich("text12", {
-            boldText: (chunks) => <strong>{chunks}</strong>,
-          })}</p>
-                <p>{t.rich("text13", {
-            boldText: (chunks) => <strong>{chunks}</strong>,
-          })}</p>
-                <p>{t.rich("text14", {
-            boldText: (chunks) => <strong>{chunks}</strong>,
-          })}</p>
-                <p>{t.rich("text15", {
-            boldText: (chunks) => <strong>{chunks}</strong>,
-          })}</p>
-                <p>{t.rich("text16", {
-            boldText: (chunks) => <strong>{chunks}</strong>,
-          })}</p>
+                <p>
+                  {t.rich("text10", {
+                    boldText: (chunks) => <strong>{chunks}</strong>,
+                  })}
+                </p>
+                <p>
+                  {t.rich("text11", {
+                    boldText: (chunks) => <strong>{chunks}</strong>,
+                  })}
+                </p>
+                <p>
+                  {t.rich("text12", {
+                    boldText: (chunks) => <strong>{chunks}</strong>,
+                  })}
+                </p>
+                <p>
+                  {t.rich("text13", {
+                    boldText: (chunks) => <strong>{chunks}</strong>,
+                  })}
+                </p>
+                <p>
+                  {t.rich("text14", {
+                    boldText: (chunks) => <strong>{chunks}</strong>,
+                  })}
+                </p>
+                <p>
+                  {t.rich("text15", {
+                    boldText: (chunks) => <strong>{chunks}</strong>,
+                  })}
+                </p>
+                <p>
+                  {t.rich("text16", {
+                    boldText: (chunks) => <strong>{chunks}</strong>,
+                  })}
+                </p>
                 <p>{t("text17")}</p>
               </div>
               <p className="text-custom-laranja2 font-automobile text-9xl flex justify-center pb-20">

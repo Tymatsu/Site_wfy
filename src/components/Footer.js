@@ -10,20 +10,20 @@ const Footer = () => {
   return (
     <div className="bg-custom-bege2 flex flex-col items-center lg:items-start lg:flex-row justify-around h-auto pb-4 font-title">
       <div className="text-center lg:text-left">
-        <Image className="w-36 h-36 mx-auto lg:mx-0" src={image} alt="Picture of the author" />
         <div className="flex justify-center lg:justify-center gap-4 mt-4">
+        <Image className="w-36 h-36 mx-auto lg:mx-0" src={image} alt="Picture of the author" />
           <Link
             href="https://www.instagram.com/whatflows.u?igsh=MXdjNGJ1c2J4Y2RzbQ=="
             passHref
           >
             <Image
-              className="w-9 h-9"
+              className="w-9 h-9 mt-10"
               src={instagramLogo}
               alt="Instagram Logo"
             />
           </Link>
           <Link href="https://wa.me/message/KWA4CXA3H5DTJ1" passHref>
-            <Image className="w-9 h-9" src={whatsappLogo} alt="WhatsApp Logo" />
+            <Image className="w-9 h-9 mt-10" src={whatsappLogo} alt="WhatsApp Logo" />
           </Link>
         </div>
       </div>

@@ -16,6 +16,7 @@ export default function Contact() {
     description: "",
     joinNewsletter: false,
   });
+  const [submitted, setSubmitted] = useState(false); // Novo estado para controlar se o formulário foi enviado
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
@@ -38,6 +39,7 @@ export default function Contact() {
 
       if (response.ok) {
         console.log("Email sent successfully");
+        setSubmitted(true); // Define o estado como true após o envio bem-sucedido
       } else {
         console.log("Failed to send email");
       }
@@ -62,134 +64,144 @@ export default function Contact() {
 
         <div className="flex items-center justify-center w-1/2 font-manrope">
           <div className="bg-white rounded max-w-lg w-full">
-            <form onSubmit={handleSubmit}>
-              <div className="mb-4">
-                <label
-                  htmlFor="firstName"
-                  className="block text-sm font-medium text-gray-700 pl-2"
-                >
-                  {t("text4")}
-                  <span className="text-blue-500"> *</span>
-                </label>
-                <input
-                  type="text"
-                  id="firstName"
-                  name="firstName"
-                  value={formData.firstName}
-                  onChange={handleChange}
-                  placeholder={t("text4")}
-                  className="border border-custom-laranja2 mt-1 block w-full rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm h-12 pl-4"
-                  required
-                />
-              </div>
-              <div className="mb-4">
-                <label
-                  htmlFor="lastName"
-                  className="block text-sm font-medium text-gray-700 pl-2"
-                >
-                  {t("text5")}
-                  <span className="text-blue-500"> *</span>
-                </label>
-                <input
-                  type="text"
-                  id="lastName"
-                  name="lastName"
-                  value={formData.lastName}
-                  onChange={handleChange}
-                  placeholder={t("text5")}
-                  className="mt-1 block w-full border border-custom-laranja2 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm h-12 pl-4"
-                  required
-                />
-              </div>
-              <div className="mb-4">
-                <label
-                  htmlFor="email"
-                  className="block text-sm font-medium text-gray-700 pl-2"
-                >
-                  {t("text6")}
-                  <span className="text-blue-500"> *</span>
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  placeholder="example@email.com"
-                  className="mt-1 block w-full border border-custom-laranja2 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm h-12 pl-4"
-                  required
-                />
-              </div>
-              <div className="mb-4">
-                <label
-                  htmlFor="phoneNumber"
-                  className="block text-sm font-medium text-gray-700 pl-2"
-                >
-                  {t("text7")}
-                </label>
-                <input
-                  type="tel"
-                  id="phoneNumber"
-                  name="phoneNumber"
-                  value={formData.phoneNumber}
-                  onChange={(e) => {
-                    const formattedValue = e.target.value.replace(/\D/g, '');
-                    setFormData({ ...formData, phoneNumber: formattedValue });
-                  }}
-                  placeholder={t("text3")}
-                  className="mt-1 block w-full border border-custom-laranja2 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm h-12 pl-4"
-                />
-              </div>
-              <div className="mb-4">
-                <label
-                  htmlFor="description"
-                  className="block text-sm font-medium text-gray-700 pl-2"
-                >
-                  {t("text8")}
-                  <span className="text-blue-500"> *</span>
-                </label>
-                <textarea
-                  id="description"
-                  name="description"
-                  value={formData.description}
-                  onChange={handleChange}
-                  className="mt-1 block w-full border border-custom-laranja2 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm pl-4"
-                  rows="4"
-                  required
-                ></textarea>
-              </div>
-              <div className="mb-4 flex items-center">
-                <input
-                  type="checkbox"
-                  id="joinNewsletter"
-                  name="joinNewsletter"
-                  checked={formData.joinNewsletter}
-                  onChange={handleChange}
-                  className="h-4 w-4 text-custom-azul1 focus:ring-indigo-500 border-gray-300 rounded"
-                  required
-                />
-                <label
-                  htmlFor="joinNewsletter"
-                  className="ml-2 block text-sm text-gray-900"
-                >
-                  {t("text11")}<span className="text-blue-500"> *</span>
-                </label>
-              </div>
-              <div className="flex justify-between">
-                <span className="">
-                  <span className="text-blue-500">* </span>
-                  {t("text9")}
-                </span>
-                <div className="">
-                  <button
-                    type="submit"
-                    className="font-semibold bg-custom-azul1 hover:bg-blue-700 hover:text-white text-white py-[13px] px-[28px] rounded-full"
+            {submitted ? ( // Condicional para verificar se o formulário foi enviado
+              <p className="text-center text-custom-laranja2 p-6">
+                {t("successMessage")} {/* Mensagem de sucesso após o envio */}
+              </p>
+            ) : (
+              <form onSubmit={handleSubmit}>
+                <div className="mb-4">
+                  <label
+                    htmlFor="firstName"
+                    className="block text-sm font-medium text-gray-700 pl-2"
                   >
-                    {t("text10")}
-                  </button>
+                    {t("text4")}
+                    <span className="text-blue-500"> *</span>
+                  </label>
+                  <input
+                    type="text"
+                    id="firstName"
+                    name="firstName"
+                    value={formData.firstName}
+                    onChange={handleChange}
+                    placeholder={t("text4")}
+                    className="border border-custom-laranja2 mt-1 block w-full rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm h-12 pl-4"
+                    required
+                  />
                 </div>
-              </div>
-            </form>
+                <div className="mb-4">
+                  <label
+                    htmlFor="lastName"
+                    className="block text-sm font-medium text-gray-700 pl-2"
+                  >
+                    {t("text5")}
+                    <span className="text-blue-500"> *</span>
+                  </label>
+                  <input
+                    type="text"
+                    id="lastName"
+                    name="lastName"
+                    value={formData.lastName}
+                    onChange={handleChange}
+                    placeholder={t("text5")}
+                    className="mt-1 block w-full border border-custom-laranja2 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm h-12 pl-4"
+                    required
+                  />
+                </div>
+                <div className="mb-4">
+                  <label
+                    htmlFor="email"
+                    className="block text-sm font-medium text-gray-700 pl-2"
+                  >
+                    {t("text6")}
+                    <span className="text-blue-500"> *</span>
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    placeholder="example@email.com"
+                    className="mt-1 block w-full border border-custom-laranja2 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm h-12 pl-4"
+                    required
+                  />
+                </div>
+                <div className="mb-4">
+                  <label
+                    htmlFor="phoneNumber"
+                    className="block text-sm font-medium text-gray-700 pl-2"
+                  >
+                    {t("text7")}
+                  </label>
+                  <input
+                    type="tel"
+                    id="phoneNumber"
+                    name="phoneNumber"
+                    value={formData.phoneNumber}
+                    onChange={(e) => {
+                      const formattedValue = e.target.value.replace(/\D/g, "");
+                      setFormData({
+                        ...formData,
+                        phoneNumber: formattedValue,
+                      });
+                    }}
+                    placeholder={t("text3")}
+                    className="mt-1 block w-full border border-custom-laranja2 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm h-12 pl-4"
+                  />
+                </div>
+                <div className="mb-4">
+                  <label
+                    htmlFor="description"
+                    className="block text-sm font-medium text-gray-700 pl-2"
+                  >
+                    {t("text8")}
+                    <span className="text-blue-500"> *</span>
+                  </label>
+                  <textarea
+                    id="description"
+                    name="description"
+                    value={formData.description}
+                    onChange={handleChange}
+                    className="mt-1 block w-full border border-custom-laranja2 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm pl-4"
+                    rows="4"
+                    required
+                  ></textarea>
+                </div>
+                <div className="mb-4 flex items-center">
+                  <input
+                    type="checkbox"
+                    id="joinNewsletter"
+                    name="joinNewsletter"
+                    checked={formData.joinNewsletter}
+                    onChange={handleChange}
+                    className="h-4 w-4 text-custom-azul1 focus:ring-indigo-500 border-gray-300 rounded"
+                    required
+                  />
+                  <label
+                    htmlFor="joinNewsletter"
+                    className="ml-2 block text-sm text-gray-900"
+                  >
+                    {t("text11")}
+                    <span className="text-blue-500"> *</span>
+                  </label>
+                </div>
+                <div className="flex justify-between">
+                  <span className="">
+                    <span className="text-blue-500">* </span>
+                    {t("text9")}
+                  </span>
+                  <div className="">
+                    <button
+                      type="submit"
+                      className="font-semibold bg-custom-azul1 hover:bg-blue-700 hover:text-white text-white py-[13px] px-[28px] rounded-full"
+                    >
+                      {t("text10")}
+                    </button>
+                  </div>
+                </div>
+              </form>
+            )}
           </div>
         </div>
       </div>

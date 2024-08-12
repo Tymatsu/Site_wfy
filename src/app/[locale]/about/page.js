@@ -2,17 +2,26 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Image from "next/image";
+import { useLocale } from 'next-intl';
 import quotationLeft from "../../../../public/11.PNG";
 import quotationRight from "../../../../public/12.PNG";
 import circle1 from "../../../../public/circle1.png";
 import circle2 from "../../../../public/circle2.png";
 import circle3 from "../../../../public/circle3.png";
 import circle4 from "../../../../public/circle4.png";
+import circle5 from "../../../../public/circle5.png";
+import circle6 from "../../../../public/circle6.png";
+import circle7 from "../../../../public/circle7.png";
 import pictureAbout from "../../../../public/pictureAbout.png";
 import { useTranslations } from "next-intl";
 
 export default function About() {
   const t = useTranslations("about");
+  const locale = useLocale();
+  const imagesEn = [circle7, circle4, circle5, circle6];
+  const imagesPt = [circle7, circle1, circle2, circle3];
+  const images = locale === 'pt' ? imagesPt : imagesEn;
+
   return (
     <main className="">
       <Header />
@@ -22,7 +31,7 @@ export default function About() {
             <div className="flex flex-col items-center w-1/6 -px-24">
               <Image
                 className="w-44"
-                src={circle1}
+                src={images[0]}
                 alt="Picture of the author"
               />
               <p className="break-words w-full">{t("text1")}</p>
@@ -30,7 +39,7 @@ export default function About() {
             <div className="flex flex-col items-center w-1/6">
               <Image
                 className="w-44"
-                src={circle2}
+                src={images[1]}
                 alt="Picture of the author"
               />
               <p className="break-words w-full">{t("text2")}</p>
@@ -38,7 +47,7 @@ export default function About() {
             <div className="flex flex-col items-center w-1/6">
               <Image
                 className="w-44"
-                src={circle3}
+                src={images[2]}
                 alt="Picture of the author"
               />
               <p className="break-words w-full">{t("text3")}</p>
@@ -46,7 +55,7 @@ export default function About() {
             <div className="flex flex-col items-center w-1/6">
               <Image
                 className="w-44"
-                src={circle4}
+                src={images[3]}
                 alt="Picture of the author"
               />
               <p className="break-words w-full">{t("text4")}</p>
@@ -81,11 +90,11 @@ export default function About() {
           <div className="relative z-10 bg-custom-amarelo1 rounded-b-[96px] py-40 h-1/2 px-20">
             <div className="flex justify-center pb-40">
               <iframe
-                src={"https://www.youtube.com/embed/iWOyfLBYtuU"}
+                src={t("text21")}
                 width={700}
                 height={400}
                 frameborder="10"
-                sandbox
+                allowFullScreen
               />
             </div>
             <div className="bg-white px-12 -mb-48 shadow-2xl rounded-lg font-manrope">

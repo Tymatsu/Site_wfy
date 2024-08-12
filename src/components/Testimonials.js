@@ -2,7 +2,10 @@ import Image from "next/image";
 import detail3 from "../../public/3.PNG";
 import foto2 from "../../public/foto2.png";
 import foto3 from "../../public/foto3.png";
-import foto4 from "../../public/foto4.png";
+//import foto4 from "../../public/foto4.png";
+import foto5 from "../../public/foto5.jpg";
+import foto6 from "../../public/foto6.png";
+import foto7 from "../../public/foto7.jpg";
 
 export default function Testimonials({ t }) {
   const testimonials = [
@@ -10,46 +13,47 @@ export default function Testimonials({ t }) {
       id: 1,
       text1: t("text54"),
       text2: t("text55"),
-      text3: t("text56"),
+      text4: t("text56"),
       image1: detail3,
       image2: foto2,
       name: "R.V.",
     },
     {
       id: 2,
+      text1: t("text63"),
+      text2: t("text64"),
+      text3: t("text65"),
+      text4: t("text66"),
+      image1: detail3,
+      image2: foto6,
+      name: "G.V.",
+    },
+    {
+      id: 3,
       text1: t("text57"),
       text2: t("text58"),
-      text3: t("text59"),
+      text4: t("text59"),
       image1: detail3,
       image2: foto3,
       name: "M.B.",
     },
     {
-      id: 3,
-      text1: t("text60"),
-      text2: t("text61"),
-      text3: t("text62"),
-      image1: detail3,
-      image2: foto4,
-      name: "T.F.",
-    },
-    {
       id: 4,
       text1: t("text60"),
       text2: t("text61"),
-      text3: t("text62"),
+      text4: t("text62"),
       image1: detail3,
-      image2: foto4,
-      name: "T.F.",
+      image2: foto5,
+      name: "B.T.",
     },
     {
       id: 5,
-      text1: t("text60"),
-      text2: t("text61"),
-      text3: t("text62"),
+      text1: t("text67"),
+      text2: t("text68"),
+      text4: t("text69"),
       image1: detail3,
-      image2: foto4,
-      name: "T.F.",
+      image2: foto7,
+      name: "M.T.",
     },
   ];
 
@@ -62,16 +66,18 @@ export default function Testimonials({ t }) {
         “
       </span>
 
-      <div className="">
+      <div className="space-y-8">
         <p>
           <span className="text-9xl font-manrope absolute left-0 top-4 lg:hidden">
             “
           </span>
           {testimonial.text1}
         </p>
-        <p className="pt-8">{testimonial.text2}</p>
-        <p className="pt-8 relative">
-          {testimonial.text3} <span className="text-9xl absolute">”</span>
+        <p className="">{testimonial.text2}</p>
+        <p className="">{testimonial.text3}</p>
+        <p className=" relative">
+          {testimonial.text4}
+          <span className="text-9xl absolute">”</span>
         </p>
       </div>
 

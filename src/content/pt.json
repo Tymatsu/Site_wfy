@@ -59,7 +59,7 @@
 
     "text35": "Consultoria",
     "text36": "...entre outras",
-    "text41": "Outras Carrerias",
+    "text41": "Outras Carreiras",
     "text42": "...entre outras",
 
     "text39": "(PESSOAL)",
@@ -77,6 +77,7 @@
     "text52": "Dê o primeiro passo",
 
     "text53": "Testemunhos",
+
     "text54": "Mesmo tendo sido mentorada há alguns anos, WFY ainda tem muitos impactos positivos na minha vida até hoje. Foi um processo muito intenso e sincero de autoconhecimento, que me ajudou a entender (e comunicar melhor) meus pontos fortes e fracos.",
     "text55": "Aprendi a contar sobre minha jornada de forma clara, coerente e a mostrar confiança. Foi muito importante para mim também entender meus objetivos de carreira e quais oportunidades de emprego combinavam melhor com as minhas ambições.",
     "text56": "A Stephanie consegue criar um ambiente seguro para qualquer que seja o momento da sua vida. Ela te escuta sem julgamento e te aconselha sobre os próximos passos de maneira positiva e encorajadora, sem soar irrealista. Recomendo fortemente a mentoria com a Stephanie para abraçar esse processo de olhar para si mesmo, suas ideias e carreira com o suporte do olhar atento e cuidadoso dela.",
@@ -85,9 +86,19 @@
     "text58": "A mentoria me deu forças para continuar sonhando, me lembrou das minhas qualidades e me deu segurança para superar meus medos. Assim, foi um ponto crucial para mim, porque não só aprendi a ter uma performance excelente nas Entrevistas de Caso (sendo que no início eu praticamente não sabia praticamente nada sobre), mas também tive um enorme momento de redescoberta interpessoal.",
     "text59": "Com as mentorias, tive um espaço para refletir profundamente, organizar quem eu era, o que tinha feito até então, quem eu gostaria de me tornar e como eu faria isso de forma efetiva. Em resumo, a Stephanie é fantástica! Foi a melhor mentoria que já tive, recebi ofertas cruzadas de duas grande consultorias estratégicas - McKinsey & Company e Kearney - e defini a progressão de carreira ideal para mim!",
 
-    "text60": "O diferencial da mentoria What Flows You é seu foco único no mentee, encorajando sempre a abraçar sua individualidade ao invés de se conformar a um molde pré-definido dentro de uma empresa específica.",
-    "text61": "Esse aspecto da mentoria foi o mais significativo e transformador para mim. Sua abordagem abrangente me permitiu ganhar um entendimento mais profundo de mim mesma, aprimorando tanto minhas habilidades técnicas quanto interpessoais, cruciais para entrevistas e processos seletivos.",
-    "text62": "Agradeço muito a mentoria WFY que me permitiu entrar na carreira de consultoria estratégica logo após a faculdade. De uma forma mais ampla, ela me capacitou reavaliar minha carreira como um todo e contemplar futuras mudanças com muito mais confiança."
+    "text60": "A mentoria do What Flows You foi essencial para eu conseguir um novo e melhor emprego na minha área de Propaganda e Marketing. Nela aprendi habilidades técnicas e interpessoais sobre como elevar de forma estratégica meu currículo, além de excelente carta de apresentação e treinos para entrevistas.",
+    "text61": "Após a mentoria, certamente vejo toda a jornada de conseguir um novo emprego com outros olhos. Olhos mais maduros que me permitem ser o protagonista de todo o caminho.",
+    "text62": "Tenho certeza de que todas as coisas que aprendi replicarei não somente quando buscar novas oportunidades de emprego, mas também na vida: e isso é um dos grandes diferenciais do WFY, você não apenas alcança o objetivo específico que compartilhou com a Stephanie no início do processo, mas cresce também como indivíduo para encarar melhor a vida. É a escolha certa se você deseja alcançar seus objetivos mais ambiciosos ou quer saber mais sobre si mesmo.",
+  
+    "text63": "Sou extremamente grato pela experiência enriquecedora de construir cada etapa do processo seletivo de consultoria com o WFY, desde fazer meu currículo, carta de apresentação, praticar entrevistas de caso, entrevistas de Fit e Estimativa com feedbacks excelentes que comprovam toda a expertise da Stephanie.",
+    "text64": "Todas essas abordagens não apenas me ajudaram passar em consultoria estratégica, mas também expandiram minha capacidade de autoconhecimento durante a jornada. A orientação fornecida nas sessões do WFY foi fundamental para meu crescimento pessoal e profissional.",
+    "text65": "Durante e entre as sessões, Stephanie sempre deu conselhos muito perspicazes, com apoio inabalável e compromisso genuíno com meu desenvolvimento, tendo um impacto profundo em mim. Um dos maiores valores que obtive com a mentoria foi observar a importancia da reflexão profunda e troca de conhecimentos tanto relacionados à Consultoria como em temas gerais da vida, tendo um impacto perpétuo na mesma.",
+    "text66": "Possuindo uma habilidade única de inspirar e motivar, a Stephanie cria um ambiente de aprendizado muito positivo e construtivo como nenhum outro.",  
+  
+    "text67": "Durante um dos momentos mais desafiadores da minha vida, o What Flows You me ofereceu uma perspectiva totalmente nova. Após deixar uma carreira de 5 anos que não me satisfazia no meu país de origem, eu estava pronta para recomeçar em um novo lugar.",
+    "text68": "A mentoria do WFY me ofereceu expertise e suporte em cada etapa, desde a escolha do país, incluindo o processo de imigração quanto a busca de emprego. Eu sabia que procurar um emprego em um novo país não seria fácil, mas a mentoria do WFY me deu as ferramentas necessárias para me sentir confiante nas minhas habilidades durante o processo seletivo. Foi impressionante a habilidade da Stephanie em traduzir em uma cover letter a minha história de uma maneira única e memorável. Além de conseguir me fazer sentir preparada para as entrevistas superando minha timidez.",
+    "text69": "Como resultado, consegui 3 ofertas de emprego no exterior e, atualmente, estou trabalhando como arquiteta na Austrália, aumentando meu salário em mais de 7 vezes em comparação ao do meu país de origem. Graças à mentoria do WFY, me sinto muito mais empoderada e reconhecida na minha carreira, além de ter uma qualidade de vida muito melhor no novo país."
+    
   },
   "chapters": {
     "text1": "Você está ansioso para finalmente conseguir aquela <boldText>vaga de emprego competitiva</boldText> na empresa dos seus sonhos?",
@@ -128,8 +139,8 @@
   "about": {
     "text1": "dos mentorados atingem seus objetivos",
     "text2": "de metologia aplicada e testada",
-    "text3": "recebeu oferta de mba m7",
-    "text4": "de experiência em consultorias estratégicas tier 1 (mbb)",
+    "text3": "de experiência em consultorias estratégicas tier 1 (mbb)",
+    "text4": "de experiência em mentoria",
     "text5": "...e contando!",
     "text19": "Propósito de vida da Stephanie:",
     "text20": "Ajudar as pessoas a vivenciar a melhor versão de si mesmas.",
@@ -146,7 +157,9 @@
     "text15": "Somos responsáveis por nossas vidas todos os dias, o tempo todo. Sem parar. Nossa saúde, que é o que realmente garante que ainda estamos respirando aqui nesta imensa rocha azul no Universo, deve ser a <boldText>coisa mais importante</boldText> para nós. Ao longo dos anos, desenvolvi metodologias para garantir que meus mentorados assumao o assento de <boldText>diretor das suas vidas</boldText>. Posso garantir que alcançar o que chamamos de <boldText>estado de Flow</boldText> deve ser seu objetivo. Deixa eu te ajudar.",
     "text16": "Aproveite cada minuto da história que você está <boldText>escrevendo para si</boldText>.",
     "text17": "Sem mais delongas:",
-    "text18": "“3,2,1...Ação!”"
+    "text18": "“3,2,1...Ação!”",
+
+    "text21": "https://www.youtube.com/embed/2zSH8qKjh9c"
   },
   "contact": {
     "text0": "Olá! Que bom ver você aqui ;)",
@@ -159,6 +172,7 @@
     "text8": "Mensagem",
     "text9": "Campo obrigatório",
     "text10": "Enviar",
-    "text11": "Gostaria de se inscrever na nossa newsletter?"
+    "text11": "Gostaria de se inscrever na nossa newsletter?",
+    "successMessage": "Enviado com sucesso!"
   }
 }

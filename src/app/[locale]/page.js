@@ -276,7 +276,7 @@ export default function Home() {
               </p>
               <p>{t("text34")}</p>
             </div>
-            <div className="flex space-x-6 max-w-full  font-montserrat">
+            <div className="flex space-x-6 max-w-full font-manrope text-white">
               {/* mobile */}
               <div className="space-y-3 lg:hidden">
                 <h3 className="text-3xl text-custom-laranja2">{t("text35")}</h3>
@@ -301,22 +301,22 @@ export default function Home() {
                 <h3 className="text-3xl text-custom-laranja2">{t("text41")}</h3>
                 <div className="space-y-3">
                   <div className="flex justify-center">
-                    <Image className="w-36" src={lk} alt="" />
+                    <Image className="w-36" src={ab} alt="" />
                   </div>
                   <div className="flex justify-center">
-                    <Image className="w-36" src={am} alt="" />
+                    <Image className="w-36 mt-4" src={am} alt="" />
                   </div>
                   <div className="flex justify-center">
                     <Image className="w-36" src={ci} alt="" />
                   </div>
                   <div className="flex justify-center">
-                    <Image className="w-36" src={ab} alt="" />
+                    <Image className="w-36 -mt-10" src={lk} alt="" />
                   </div>
                 </div>
               </div>
-                  {/* desktop     */}
+              {/* desktop*/}
               <div className="bg-custom-laranja2 rounded-2xl p-6 w-[20rem] space-y-3 max-w-full max-lg:hidden relative">
-                <h3 className="text-3xl">{t("text35")}</h3>
+                <h3 className="text-3xl font-manrope">{t("text35")}</h3>
                 <div className="space-y-5 pb-10">
                   <div className="flex justify-center pt-6">
                     <Image className="w-52" src={mc} alt="" />
@@ -334,13 +334,13 @@ export default function Home() {
                     <Image className="w-36" src={ey} alt="" />
                   </div>
                 </div>
-                <p className="absolute bottom-0 right-0 mb-4 mr-4 text-end text-xl">
+                <p className="absolute bottom-5 right-0 mb-4 mr-4 text-end text-xl">
                   {t("text36")}
                 </p>
               </div>
 
               <div className="bg-custom-laranja2 rounded-2xl p-6 w-[20rem] space-y-3 max-w-full max-lg:hidden relative">
-                <h3 className="text-3xl">{t("text41")}</h3>
+                <h3 className="text-3xl font-manrope">{t("text41")}</h3>
                 <div className="space-y-3 pb-10">
                   <div className="flex justify-center">
                     <Image className="w-36" src={lk} alt="" />
@@ -361,7 +361,7 @@ export default function Home() {
                     <Image className="w-36" src={ab} alt="" />
                   </div>
                 </div>
-                <p className="absolute bottom-0 right-0 mb-4 mr-4 text-end text-xl">
+                <p className="absolute bottom-5 right-0 mb-4 mr-4 text-end text-xl">
                   {t("text42")}
                 </p>
               </div>

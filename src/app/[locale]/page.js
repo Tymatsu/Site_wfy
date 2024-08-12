@@ -284,13 +284,13 @@ export default function Home() {
                   <Image className="w-52" src={mc} alt="" />
                 </div>
                 <div className="flex justify-center">
-                  <Image className="w-36" src={bcg} alt="" />
+                  <Image className="w-20" src={bcg} alt="" />
+                </div>
+                <div className="flex justify-center">
+                  <Image className="w-72" src={bc} alt="" />
                 </div>
                 <div className="flex justify-center">
                   <Image className="w-36" src={kea} alt="" />
-                </div>
-                <div className="flex justify-center">
-                  <Image className="w-52" src={bc} alt="" />
                 </div>
                 <div className="flex justify-center">
                   <Image className="w-36" src={ey} alt="" />

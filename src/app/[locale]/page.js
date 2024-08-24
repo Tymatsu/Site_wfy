@@ -53,14 +53,14 @@ export default function Home() {
               </p>
               <p className="text-7xl max-lg:text-5xl">{t("text45")}</p>
             </div>
-            <div className="max-lg:flex max-lg:justify-center max-lg:pt-12">
+            <div className="max-lg:flex max-lg:justify-center max-lg:pt-10 max-lg:-m-10 max-lg:pb-5">
               <Image
-                className="lg:hidden w-3/4 pt-6"
+                className="lg:hidden w-full pt-2"
                 src={foto1}
                 alt="Picture of the author"
               />
             </div>
-            <p className="text-xl font-oswald py-10 text-custom-cinza1 max-lg:flex max-lg:justify-center">
+            <p className="text-xl font-oswald py-10 text-custom-cinza1 max-lg:flex max-lg:justify-center max-lg:-mx-5">
               {t("text4")}
             </p>
             <Link
@@ -99,7 +99,7 @@ export default function Home() {
             </p>
           </div>
           <div className="flex justify-center">
-            <p className="text-xl pt-6 max-lg:text-lg max-lg:px-2">
+            <p className="text-xl pt-6 max-lg:text-base max-lg:px-10 max-lg:text-center">
               {t("text38")}
             </p>
           </div>

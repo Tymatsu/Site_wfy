@@ -3,9 +3,9 @@ import detail3 from "../../public/3.PNG";
 import foto2 from "../../public/foto2.png";
 import foto3 from "../../public/foto3.png";
 //import foto4 from "../../public/foto4.png";
-import foto5 from "../../public/foto5.jpg";
+import foto5 from "../../public/foto5.png";
 import foto6 from "../../public/foto6.png";
-import foto7 from "../../public/foto7.jpg";
+import foto7 from "../../public/foto7.png";
 
 export default function Testimonials({ t }) {
   const testimonials = [
@@ -66,9 +66,9 @@ export default function Testimonials({ t }) {
         “
       </span>
 
-      <div className="space-y-8">
+      <div className="space-y-8 max-lg:relative">
         <p>
-          <span className="text-9xl font-manrope absolute left-0 top-4 lg:hidden">
+          <span className="text-9xl absolute font-manrope -top-12 -left-9 lg:hidden">
             “
           </span>
           {testimonial.text1}

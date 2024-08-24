@@ -27,6 +27,8 @@ import be from "../../../public/belgravia.png";
 import ab from "../../../public/AB-InBev.png";
 import detailPlan from "../../../public/17.PNG";
 import foto1 from "../../../public/foto1.png";
+import whatsappicon from "../../../public/whatsapp-icon.png";
+
 import { useTranslations } from "next-intl";
 
 export default function Home() {
@@ -80,7 +82,7 @@ export default function Home() {
         </div>
 
         <div className="pt-32 font-title pb-20 text-custom-cinza1 max-lg:pt-0">
-          <p className="text-4xl flex items-end justify-center max-lg:flex-col max-lg:items-center max-lg:text-2xl">
+          <div className="text-4xl flex items-end justify-center max-lg:flex-col max-lg:items-center max-lg:text-2xl">
             {t("text6")}
             <div className="-mb-24 max-lg:text-center">
               <b className="text-8xl pl-4 max-lg:pl-0 max-lg:text-3xl ">
@@ -92,7 +94,7 @@ export default function Home() {
                 alt="detail plan"
               />
             </div>
-          </p>
+          </div>
           <div className="flex justify-center">
             <p className="text-4xl pt-12 -ml-[38rem] max-lg:ml-0 max-lg:pt-24 max-lg:text-2xl">
               {t("text7")}
@@ -117,12 +119,12 @@ export default function Home() {
                 alt="Picture of the author"
               />
               <div className="absolute inset-0 flex flex-col items-center justify-center p-4 ml-12">
-                <p className="text-center text-4xl text-white mb-5 font-semibold max-lg:text-2xl max-lg:mb-2">
+                <div className="text-center text-4xl text-white mb-5 font-semibold max-lg:text-2xl max-lg:mb-2">
                   <span className="text-6xl max-lg:text-2xl">1. </span> PERSONAL
                   <p className="text-lg font-light max-lg:text-sm">
                     {t("text39")}
                   </p>
-                </p>
+                </div>
                 <p className="text-center text-2xl text-white w-full font-manrope font-light px-4 max-lg:text-base max-lg:px-0">
                   {t("text8")}
                   <br />
@@ -148,12 +150,12 @@ export default function Home() {
                 alt="Picture of the author"
               />
               <div className="absolute inset-0 flex flex-col items-center justify-center p-4 mr-12">
-                <p className="text-center text-4xl text-white mb-5 font-semibold max-lg:text-2xl max-lg:mb-2">
+                <div className="text-center text-4xl text-white mb-5 font-semibold max-lg:text-2xl max-lg:mb-2">
                   <span className="text-6xl max-lg:text-3xl">2. </span> LOVING
                   <p className="text-lg font-light max-lg:text-sm">
                     {t("text40")}
                   </p>
-                </p>
+                </div>
                 <p className="text-center text-2xl text-white w-full px-4 font-manrope font-light max-lg:text-base max-lg:px-0">
                   {t("text13")}
                   <br />
@@ -176,20 +178,20 @@ export default function Home() {
 
         <div className="font-title">
           <div className="flex pl-20 max-lg:pl-0">
-            <figure className="relative inline-block w-[35rem] mr-auto max-lg:w-full">
+            <figure className="relative inline-block w-[40rem] mr-auto max-lg:w-full">
               <Image
                 className="w-full block"
                 src={a}
                 alt="Picture of the author"
               />
               <div className="absolute inset-0 flex flex-col items-center justify-center p-4">
-                <p className="text-center text-4xl text-white mb-5 font-semibold max-lg:text-2xl max-lg:mb-2">
+                <div className="text-center text-4xl text-white mb-5 font-semibold max-lg:text-2xl max-lg:mb-2">
                   <span className="text-6xl max-lg:text-3xl">3. </span>{" "}
                   ACTIONABLE
                   <p className="text-lg font-light max-lg:text-sm">
                     {t("text43")}
                   </p>
-                </p>
+                </div>
                 <p className="text-center text-2xl text-white w-full font-manrope font-light px-4 max-lg:text-base max-lg:px-0">
                   {t("text20")}
                   <br />
@@ -215,13 +217,13 @@ export default function Home() {
                 alt="Picture of the author"
               />
               <div className="absolute inset-0 flex flex-col items-center justify-center p-4">
-                <p className="text-center text-4xl text-white mb-5 font-semibold max-lg:text-2xl max-lg:mb-2">
+                <div className="text-center text-4xl text-white mb-5 font-semibold max-lg:text-2xl max-lg:mb-2">
                   <span className="text-6xl max-lg:text-3xl">4. </span>{" "}
                   NOURISHING
                   <p className="text-lg font-light max-lg:text-sm">
                     {t("text44")}
                   </p>
-                </p>
+                </div>
                 <p className="text-center text-2xl text-white w-full font-manrope font-light px-4 max-lg:text-base max-lg:px-0">
                   {t("text25")}
                   <br />
@@ -262,7 +264,7 @@ export default function Home() {
               alt="Picture of the author"
             />
             <p className="text-4xl font-title pb-10">Job ON Job OFF</p>
-            <div className="text-left space-y-6 pb-6 max-w-full ">
+            <div className="text-left space-y-6 pb-6 max-w-full max-lg:px-5">
               <p>
                 {t.rich("text33", {
                   boldText: (chunks) => <strong>{chunks}</strong>,
@@ -374,7 +376,7 @@ export default function Home() {
               alt="Picture of the author"
             />
             <p className="text-4xl font-title pb-10">Life's ABC</p>
-            <div className="text-left space-y-6">
+            <div className="text-left space-y-6 max-lg:px-5">
               <p>
                 {t.rich("text47", {
                   boldText: (chunks) => <strong>{chunks}</strong>,
@@ -409,7 +411,12 @@ export default function Home() {
             {t("text51")}
           </p>
           <Link href="https://wa.me/message/KWA4CXA3H5DTJ1">
-            <button className="bg-custom-azul2 hover:bg-blue-700 hover:text-white text-custom-azul1 py-[13px] px-[28px] rounded-full">
+            <button className="flex bg-custom-azul2 hover:bg-blue-700 hover:text-white text-custom-azul1 py-[13px] px-[28px] rounded-full">
+            <Image
+              className="w-6 mr-2"
+              src={whatsappicon}
+              alt="whatsapp icon"
+            />
               {t("text52")}
             </button>
           </Link>

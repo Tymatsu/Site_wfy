@@ -254,8 +254,8 @@ export default function Chapters() {
             </div>
           </div>
         </div> */}
-        <div className="bg-white relative z-100">
-          <div className="bg-custom-bege2 h-24 rounded-tl-[96px] relative z-100"></div>
+        <div className="bg-white">
+          <div className="bg-custom-bege2 h-24 rounded-tl-[96px]"></div>
         </div>
       </div>
 

@@ -55,7 +55,7 @@ export default function Home() {
               </p>
               <p className="text-7xl max-lg:text-5xl">{t("text45")}</p>
             </div>
-            <div className="max-lg:flex max-lg:justify-center max-lg:pt-10 max-lg:-m-10 max-lg:pb-5">
+            <div className="max-lg:flex max-lg:justify-center max-lg:pt-10 max-lg:-m-5 max-lg:pb-5">
               <Image
                 className="lg:hidden w-full pt-2"
                 src={foto1}

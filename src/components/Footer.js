@@ -8,10 +8,14 @@ import { useTranslations } from "next-intl";
 const Footer = () => {
   const t = useTranslations("footer");
   return (
-    <div className="bg-custom-bege2 flex flex-col items-center lg:items-start lg:flex-row justify-around h-auto pb-4 font-title">
-      <div className="text-center lg:text-left">
-        <div className="flex justify-center lg:justify-center gap-4 mt-4">
-        <Image className="w-36 h-36 mx-auto lg:mx-0" src={image} alt="Picture of the author" />
+    <div className="bg-custom-bege2 flex flex-col lg:items-start lg:flex-row justify-around h-auto pb-4 font-title">
+      <div className="text-center lg:text-left flex mt-4 justify-around">
+        <Image
+          className="w-36 h-36 lg:mx-auto"
+          src={image}
+          alt="Picture of the author"
+        />
+        <div className="flex gap-4">
           <Link
             href="https://www.instagram.com/whatflows.u?igsh=MXdjNGJ1c2J4Y2RzbQ=="
             passHref
@@ -23,10 +27,15 @@ const Footer = () => {
             />
           </Link>
           <Link href="https://wa.me/message/KWA4CXA3H5DTJ1" passHref>
-            <Image className="w-9 h-9 mt-10" src={whatsappLogo} alt="WhatsApp Logo" />
+            <Image
+              className="w-9 h-9 mt-10"
+              src={whatsappLogo}
+              alt="WhatsApp Logo"
+            />
           </Link>
         </div>
       </div>
+
       <div className="text-center lg:text-left">
         <nav className="hidden lg:flex">
           <ul className="flex gap-10 py-12 font-bold text-xl text-custom-cinza1">
@@ -63,11 +72,9 @@ const Footer = () => {
             </li>
           </ul>
         </nav>
-        <div className="flex justify-center lg:justify-start text-custom-cinza1 pt-16 ">
-          <p className="font-manrope text-xl">
-            <b className="pr-2 font-title">© 2024 What Flows You.</b>{" "}
-            {t("text4")}
-          </p>
+        <div className="flex max-lg:justify-center font-manrope justify-start text-custom-cinza1 pt-16 max-lg:flex-col items-end max-lg:items-center text-xl max-lg:text-sm">
+          <p className=" font-bold">© 2024 What Flows You.</p>
+          <p>{t("text4")}</p>
         </div>
       </div>
     </div>

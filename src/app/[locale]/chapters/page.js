@@ -5,6 +5,7 @@ import Image from "next/image";
 import girafa from "../../../../public/Girafa.PNG";
 import onoff from "../../../../public/OnOff.PNG";
 import abc from "../../../../public/ABC.PNG";
+import whatsappicon from "../../../../public/whatsapp-icon.png";
 import { useTranslations } from "next-intl";
 
 export default function Chapters() {
@@ -14,27 +15,27 @@ export default function Chapters() {
       <Header />
       <div className="relative">
         <Image
-          className="absolute z-50 w-[240px] h-[2880px] right-0 top-12 bottom-40"
+          className="absolute z-50 w-[240px] h-[2880px] right-0 top-12 bottom-40 max-lg:hidden"
           src={girafa}
           alt="Picture of the author"
         />
         <div className="relative z-0 bg-custom-bege1">
-          <div className="relative z-0 bg-white h-24 -mt-16 rounded-bl-[96px]"></div>
+          <div className="relative z-0 bg-white h-24 -mt-16 rounded-bl-[96px] max-lg:rounded-bl-[40px] max-lg:-mt-6 max-lg:h-12"></div>
         </div>
 
         <div className="relative bg-white">
-          <div className="absolute z-0 top-0 right-0 w-64 h-64 bg-white"></div>
-          <div className="absolute z-0 bottom-0 right-0 w-64 h-64 bg-white"></div>
-          <div className="relative z-10 rounded-r-[96px] bg-custom-bege1 px-36">
-            <h2 className="flex font-title text-custom-marrom1 text-6xl pb-6 pt-20">
+          <div className="absolute z-0 top-0 right-0 w-64 h-64 bg-white max-lg:hidden"></div>
+          <div className="absolute z-0 bottom-0 right-0 w-64 h-64 bg-white max-lg:hidden"></div>
+          <div className="relative z-10 rounded-r-[96px] bg-custom-bege1 px-36 max-lg:px-6 max-lg:rounded-r-[40px]">
+            <h2 className="flex font-title text-custom-marrom1 text-6xl pb-6 pt-20 max-lg:justify-center max-lg:text-2xl max-lg:pt-10">
               Job ON Job OFF
               <Image
-                className="w-24 pl-5 -mt-5"
+                className="w-24 pl-5 -mt-5 max-lg:w-16"
                 src={onoff}
                 alt="Picture of the author"
               />
             </h2>
-            <div className="text-xl font-manrope">
+            <div className="text-xl font-manrope max-lg:text-lg">
               <ul
                 role="list"
                 className="marker:text-black-900 list-disc pl-5 space-y-3 pb-8"
@@ -93,9 +94,7 @@ export default function Chapters() {
                     boldText: (chunks) => <strong>{chunks}</strong>,
                   })}
                 </p>
-                <p>
-                  {t("text28")}
-                </p>
+                <p>{t("text28")}</p>
                 <p>
                   {t.rich("text13", {
                     boldText: (chunks) => <strong>{chunks}</strong>,
@@ -111,9 +110,14 @@ export default function Chapters() {
                 </ul>
               </div>
             </div>
-            <div className="pb-24">
+            <div className="pb-24 max-lg:pb-6 max-lg:flex max-lg:justify-center max-lg:text-base">
               <Link href="https://wa.me/message/KWA4CXA3H5DTJ1" passHref>
-                <button className="bg-blue-200 hover:bg-blue-700 hover:text-white text-blue-700 py-[13px] px-[28px] rounded-full">
+                <button className="flex bg-blue-200 hover:bg-blue-700 hover:text-white text-blue-700 py-[13px] px-[28px] rounded-full">
+                  <Image
+                    className="w-6 mr-2"
+                    src={whatsappicon}
+                    alt="whatsapp icon"
+                  />
                   {t("text7")}
                 </button>
               </Link>
@@ -124,16 +128,16 @@ export default function Chapters() {
         <div className="relative">
           <div className="absolute z-0 top-0 left-0 w-64 h-64 bg-custom-bege1"></div>
           <div className="absolute z-0 bottom-0 left-0 w-64 h-64 bg-white"></div>
-          <div className="relative z-10 px-36 bg-white rounded-l-[96px]">
-            <h2 className="flex font-title text-custom-marrom1 text-6xl pt-12 pb-6">
+          <div className="relative z-10 px-36 bg-white rounded-l-[96px] max-lg:px-6 max-lg:rounded-l-[40px]">
+            <h2 className="flex font-title text-custom-marrom1 text-6xl pt-12 pb-6 max-lg:justify-center max-lg:text-2xl">
               Life’s ABC
               <Image
-                className="w-24 pl-5 -mt-6"
+                className="w-24 pl-5 -mt-6 max-lg:w-16"
                 src={abc}
                 alt="Picture of the author"
               />
             </h2>
-            <div className="text-xl font-manrope">
+            <div className="text-xl font-manrope max-lg:text-lg">
               <ul
                 role="list"
                 className="marker:text-black-900 list-disc pl-5 space-y-3 pb-8"
@@ -189,9 +193,14 @@ export default function Chapters() {
               </ul>
             </div>
 
-            <div className="pb-20">
+            <div className="pb-20 max-lg:pb-6 max-lg:flex max-lg:justify-center max-lg:text-base">
               <Link href="https://wa.me/message/KWA4CXA3H5DTJ1" passHref>
-                <button className="bg-blue-200 hover:bg-blue-700 hover:text-white text-blue-700 py-[13px] px-[28px] rounded-full">
+                <button className="flex bg-blue-200 hover:bg-blue-700 hover:text-white text-blue-700 py-[13px] px-[28px] rounded-full">
+                  <Image
+                    className="w-6 mr-2"
+                    src={whatsappicon}
+                    alt="whatsapp icon"
+                  />
                   {t("text7")}
                 </button>
               </Link>
@@ -255,7 +264,7 @@ export default function Chapters() {
           </div>
         </div> */}
         <div className="bg-white">
-          <div className="bg-custom-bege2 h-24 rounded-tl-[96px]"></div>
+          <div className="bg-custom-bege2 h-24 rounded-tl-[96px] max-lg:rounded-tl-[40px] max-lg:h-10"></div>
         </div>
       </div>
 

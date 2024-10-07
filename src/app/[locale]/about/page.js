@@ -110,7 +110,7 @@ export default function About() {
                 </div>
 
                 <div className="w-1/2 ml-auto space-y-4 max-lg:ml-0 max-lg:w-full max-lg:pt-40 max-lg:px-3">
-                  <h2 className="font-automobile text-9xl text-custom-azul1 max-lg:text-center">
+                  <h2 className="font-automobile text-9xl text-custom-azul1 max-lg:text-[7rem] max-lg:text-center">
                     {t("text6")}
                   </h2>
                   <p>

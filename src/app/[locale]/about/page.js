@@ -69,7 +69,7 @@ export default function About() {
         </div>
 
         <div className="bg-custom-bege1 py-16">
-          <p className="font-title font-bold text-2xl pl-24 pb-10 max-lg:text-left max-lg:pl-10">
+          <p className="font-title font-bold text-2xl pl-24 pb-10 max-lg:text-center max-lg:pl-0">
             {t("text19")}
           </p>
           <div className="relative flex justify-center items-center ">
@@ -87,22 +87,21 @@ export default function About() {
               alt="Picture of the author"
             />
           </div>
-          <div className="flex justify-center pt-20 pb-0">
+          <div className="flex justify-center pt-20 pb-0 aspect-auto h-80 mobile3:h-[30rem]">
             <iframe
-              className="max-lg:w-full"
+              className="max-lg:w-full max-lg:h-full"
               src={t("text21")}
               width={700}
-              height={400}
+              height={450}
               allowFullScreen
             />
           </div>
         </div>
-        {/* mobile1 e mobile2 nao estao funcionando nesse caso */}
-        <div className="bg-custom-bege1 lg:h-[90rem] max-lg:h-[135rem] mobile3:min-h-[150rem] mobile2:min-h-[163rem] mobile1:min-h-[185rem]">
+        <div className="bg-custom-bege1 h-[195rem] mobile1:h-[167rem] mobile2:h-[144rem] mobile3:h-[115rem] mobile4:h-[100rem] ">
           <div className=" relative bg-custom-amarelo1 rounded-b-[96px] px-20 max-lg:px-4 h-[53%] ">
             <div className=" bg-white px-12 shadow-2xl rounded-lg font-manrope max-lg:px-4 max-lg:text-lg absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 w-5/6 max-lg:w-[95%]">
               <div className="relative pb-12 max-lg:pb-4">
-                <div className="absolute bottom-10 right-36 w-full max-lg:bottom-0 max-lg:-top-44 max-lg:right-1/2 max-lg:transform max-lg:translate-x-1/2 max-lg:w-80">
+                <div className="absolute bottom-10 right-36 w-full max-lg:bottom-0 max-lg:-top-44 max-lg:right-1/2 max-lg:transform max-lg:translate-x-[40%] max-lg:w-80">
                   <Image
                     className="w-[32rem] max-lg:w-80"
                     src={pictureAbout}
@@ -110,8 +109,8 @@ export default function About() {
                   />
                 </div>
 
-                <div className="w-1/2 ml-auto space-y-4 max-lg:ml-0 max-lg:w-full max-lg:pt-40">
-                  <h2 className="font-automobile text-9xl text-custom-azul1 max-lg:text-8xl max-lg:text-center">
+                <div className="w-1/2 ml-auto space-y-4 max-lg:ml-0 max-lg:w-full max-lg:pt-40 max-lg:px-3">
+                  <h2 className="font-automobile text-9xl text-custom-azul1 max-lg:text-center">
                     {t("text6")}
                   </h2>
                   <p>
@@ -132,7 +131,7 @@ export default function About() {
                 </div>
               </div>
 
-              <div className="space-y-4 ">
+              <div className="space-y-4 max-lg:px-3">
                 <p>
                   {t.rich("text10", {
                     boldText: (chunks) => <strong>{chunks}</strong>,

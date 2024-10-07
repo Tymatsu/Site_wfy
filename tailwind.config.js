@@ -8,10 +8,14 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        mobile1: { max: "360px" },
-        mobile2: { max: "400px" },
-        mobile3: { max: "510px" },
-        "max-lg": { max: "1023px" }
+        "mobile1": "370px",
+        "mobile2": "470px",
+        "mobile3": "650px",
+        "mobile4": "1023px",
+        // "mobile1": { max: "360px" },
+        // "mobile2": { max: "400px" },
+        // "mobile3": { max: "510px" },
+        "max-lg": { max: "1023px" },
       },
       backgroundImage: {
         "not-found": "url('/bg-404.png')",

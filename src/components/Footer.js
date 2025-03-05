@@ -16,7 +16,7 @@ const Footer = () => {
           alt="Picture of the author"
         />
         <div className="flex gap-4">
-          {/* <Link
+          <Link
             href="https://www.instagram.com/whatflows.u?igsh=MXdjNGJ1c2J4Y2RzbQ=="
             passHref
           >
@@ -25,7 +25,7 @@ const Footer = () => {
               src={instagramLogo}
               alt="Instagram Logo"
             />
-          </Link> */}
+          </Link>
           <Link href="https://wa.me/message/KWA4CXA3H5DTJ1" passHref>
             <Image
               className="w-9 h-9 mt-10"

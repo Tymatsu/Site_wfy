@@ -54,6 +54,22 @@ const Header = () => {
             </Link>
           </li>
           <li>
+            <Link
+              href="/mybook"
+              className="hover:underline underline-offset-8"
+            >
+              {t("text5")}
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/lectures"
+              className="hover:underline underline-offset-8"
+            >
+              {t("text6")}
+            </Link>
+          </li>
+          <li>
             <Link href="https://wa.me/message/KWA4CXA3H5DTJ1">
               <button className="bg-custom-azul2 hover:bg-blue-700 hover:text-white text-blue-700 py-[13px] px-[28px] rounded-full mt-[-1rem]">
                 {t("text4")}

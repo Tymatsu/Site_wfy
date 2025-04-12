@@ -21,13 +21,14 @@ export default function Chapters() {
         <div className="relative z-0 bg-custom-bege1">
           <div className="relative z-0 bg-white h-24 -mt-16 rounded-bl-[96px]"></div>
         </div>
-     export default function MeuLivro() {
-  return (
-    <main className="p-6">
-      <h1 className="text-3xl font-bold">Palestras</h1>
-      <p className="mt-4">
-        Aqui você pode apresentar informações sobre a sua palestra.
-      </p>
-    </main>
+      </div>
+      <main className="p-6">
+        <h1 className="text-3xl font-bold">Palestras</h1>
+        <p className="mt-4">
+          Aqui você pode apresentar informações sobre a sua palestra.
+        </p>
+      </main>
+      <Footer />
+    </>
   );
 }

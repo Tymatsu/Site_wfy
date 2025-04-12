@@ -375,7 +375,7 @@ export default function Home() {
               src={card2}
               alt="Picture of the author"
             />
-            <p className="text-4xl font-title pb-10">Life's ABC</p>
+            <p className="text-4xl font-title pb-10">Life&apos;s ABC</p>
             <div className="text-left space-y-6 max-lg:px-5">
               <p>
                 {t.rich("text47", {

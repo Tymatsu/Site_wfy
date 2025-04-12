@@ -34,6 +34,69 @@ export default function Chapters() {
                 alt="Picture of the author"
               />
             </h2>
+  
+import React, { useState } from 'react';
+import { Document, Page, pdfjs } from 'react-pdf';
+
+// Configurando o worker do PDF.js com base na versão utilizada
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
+
+export default function PDFViewerPage() {
+  const [numPages, setNumPages] = useState(null);
+  const [pageNumber, setPageNumber] = useState(1);
+
+  // Função chamada quando o documento é carregado com sucesso
+  function onDocumentLoadSuccess({ numPages }) {
+    setNumPages(numPages);
+    setPageNumber(1);
+  }
+
+  // Função para ir para a página anterior
+  const goToPrevPage = () => {
+    setPageNumber(prev => Math.max(prev - 1, 1));
+  };
+
+  // Função para ir para a próxima página
+  const goToNextPage = () => {
+    setPageNumber(prev => Math.min(prev + 1, numPages));
+  };
+
+  return (
+    <div className="min-h-screen p-6 flex flex-col items-center">
+      <h1 className="text-2xl font-bold mb-4">Visualizador de PDF</h1>
+      <div className="border p-4">
+        <Document
+          file="/meu-arquivo.pdf"  {/* Certifique-se de que o arquivo PDF esteja na pasta public */}
+          onLoadSuccess={onDocumentLoadSuccess}
+          loading="Carregando PDF..."
+          error="Erro ao carregar o PDF"
+        >
+          <Page pageNumber={pageNumber} scale={1.5} />
+        </Document>
+      </div>
+      <div className="mt-4 flex space-x-4 items-center">
+        <button 
+          onClick={goToPrevPage} 
+          disabled={pageNumber <= 1} 
+          className="px-4 py-2 bg-blue-500 text-white rounded disabled:opacity-50"
+        >
+          Página Anterior
+        </button>
+        <span>
+          Página {pageNumber} de {numPages}
+        </span>
+        <button 
+          onClick={goToNextPage} 
+          disabled={pageNumber >= numPages} 
+          className="px-4 py-2 bg-blue-500 text-white rounded disabled:opacity-50"
+        >
+          Próxima Página
+        </button>
+      </div>
+    </div>
+  );
+}
+  
             <div className="text-xl font-manrope">
               <ul
                 role="list"
